@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h1>Register Now!</h1>
+    <div>
+        <form method ="POST",action="submit">
+            <fieldset class="form-group">
+                <div class = "mb-4">
+                    {{form.username.label}}
+                    {{form.username}}
+                </div>
+
+                <div class = "mb-4">
+                    {{form.email.label}}
+                    {{form.email}}
+                </div>
+
+                <div class = "mb-4">
+                    {{form.password.label}}
+                    {{form.password}}
+                </div>
+                
+                <div class = "mb-4">
+                    {{form.confirm_password.label}}
+                    {{form.confirm_password}}
+                </div>
+
+                <div class = "mb-4">
+                    {{form.submit}}
+                </div>
+            </fieldset> 
+        </form>
+    </div>
+{% endblock content %}
